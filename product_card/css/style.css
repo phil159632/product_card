@@ -1,0 +1,116 @@
+*{
+    box-sizing:border-box ;
+    /* border: 1px solid #000; */
+}
+a{
+    text-decoration :none;
+}html,body{
+    height: 100%;
+}
+h1,h2,p{
+    margin: 0;
+}
+/* 背景容器 */
+.wrapper{
+    height: 100%;
+    background-color: #ccc;
+    background:linear-gradient(#EF9FBF,#F9DED7) ;
+    overflow: hidden;
+}
+/* Product Card 設定 */
+.product{
+    padding: 16px;
+    border-radius: 4px;
+    width: 800px;
+    height: 540px;
+    background-color: #fff;
+    box-shadow: 0 20px 80px 0 rgba(0,0,0,0.5);
+    /* 置中(display margin)
+    1.display:block;
+    2.要有寬度值設定
+    3.margin水平方向auto
+     */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 128px;
+}
+.product .info{
+    display:inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 64px 56px;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+.product .image{
+    display:inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.product .image img{
+    height: 100%;
+    display: block;
+}
+.product .name{
+    font-size: 100px;
+    font-weight: 300px;
+    color: #444;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    text-shadow: 0 48px 10px rgba(0,0,0,0.05);
+    /* 定位元素與層級設定 */
+  position: relative;
+  z-index: 10;
+}
+.product .price{
+    font-size: 48px;
+    font-weight: 300px;
+    color: #EA4C73;
+    margin-bottom: 16px;
+}
+.product .des{
+    font-weight: 16px;
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 16px;
+}
+.product .btn{
+    display:inline-block;
+    /* way1 */
+    padding: 12px 40px ;
+    line-height: 24px; 
+    /* way2 */
+    /* text-align: center;
+    width: 200px; */
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 8px;
+    color: #fff;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.5);
+    /* background-color:#EA4C73 ; */
+    background: rgb(219,202,206);
+background: linear-gradient(90deg, rgba(219,202,206,1) 0%, rgba(234,76,115,1) 48%, rgba(231,164,181,1) 100%);
+
+}
+/* 
+display: … (顯示屬性)
+vertical-align: … (垂直排列方式)
+width: 數值+單位; (寬度設定)
+height: 數值+單位; (高度設定)
+border: 大小 種類 色碼; (邊界)
+margin: 數值+單位; (外距)
+padding: 數值+單位; (內距)
+overflow: 狀態; (當內容超出容器範圍時)
+background-color: 色碼; (背景色)
+background: linear-gradient(…); (漸層色)
+color: 色碼; (文字顏色)
+font-size: 數值+單位; (文字字級)
+font-family: 數值+單位; (文字字型)
+line-height: 倍率或數值; (行高)
+text-align: left | center | right; (文字對齊)
+text-decoration: none; (不給文字裝飾)
+text-shadow: x座標 y座標 模糊值 擴散值 顏色; (文字陰影)
+box-shadow: x座標 y座標 模糊值 擴散值 顏色; (陰影)
+ */
